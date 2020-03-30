@@ -96,6 +96,7 @@ if __name__ == "__main__":
 
 
 	file_list = os.listdir("input")
+	file_list.remove(".gitignore")
 	while len(file_list) > 0:
 		name = file_list[0].split("_")[0]
 		names = [tmp for tmp in file_list if name in tmp]
