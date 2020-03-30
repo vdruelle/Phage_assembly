@@ -60,7 +60,7 @@ def create_slurm(read1, read2, name):
 			-2 sub_sampled/{name}_R2_subsampled.fastq \
 			-o Unicycler_output/{name} \
 			--mode bold \
-			--min_fasta_length 5000 \n")
+			--min_fasta_length 1000 \n")
 		f.write("\n")
 		f.write(f"cp Unicycler_output/{name}/assembly.fasta output/{name}.fasta\n")
 		f.write("\n")
